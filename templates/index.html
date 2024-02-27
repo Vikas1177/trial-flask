@@ -21,7 +21,8 @@
     <h1>Email Spam Classifier</h1>
     <div>
         <form method="post" action="/predict">
-            <textarea rows="12" cols="60" name="email-content" placeholder="Type or paste your email here">{{email_text}}</textarea>
+            <textarea rows="12" cols="60" name="email-content"
+                placeholder="Type or paste your email here">{{email_text}}</textarea>
             <div>
                 <button>
                     Submit
@@ -40,6 +41,23 @@
         {% endif %}
         <!-- <p id="display"></p> -->
     </div>
+    <div>
+        <h2>email spam example</h2>
+        <p>
+            I love tax season" said no one ever. So here are some hacks to make it more bearable:
+            Save up to ₹46 K in taxes by investing ₹1.5 L in ELSS Mutual Funds
+            Save up to ₹10 K in taxes by harvesting ₹1 L in long-term capital gains. Check recommendations
+            Unfortunately, complaining about taxes is not tax deductible
+        </p>
+    </div>
+    <div><h2>email not spam</h2>
+    <p>We have some changes in our regular class schedule for this week. Instead of the usual "Machine Learning Foundations" and "Data Science Career Readiness Training" on Wednesday, 14th June, we are rescheduling the class to Thursday, 15th June.
+
+        Instructor, will be conducting an exclusive workshop titled "Machine Learning Model Deployment" on the 14th of June. The workshop will be held from 7:00 PM to 8:30 PM IST. We strongly recommend all students to attend the workshop.
+        
+        You can join the workshop via this link.
+        
+        Please reach out to us via Discussions for any queries. We appreciate your understanding and cooperation in this matter, and we look forward to seeing you at the workshop and the rescheduled class.</p></div>
 </body>
 
 </html>
